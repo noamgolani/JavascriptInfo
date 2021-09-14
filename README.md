@@ -30,3 +30,8 @@
 #### [Mouse events](https://javascript.info/mouse-events-basics)
 
 - [Selactable list](https://noamgolani.github.io/JavascriptInfo/3/1/task1.html)
+
+#### [Moving the mouse: mouseover/out, mouseenter/leave](https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave)
+
+- [Improved tooltip behavior](https://noamgolani.github.io/JavascriptInfo/3/2/task1.html)
+- ["Smart" tooltip](https://noamgolani.github.io/JavascriptInfo/3/2/task2.html)
