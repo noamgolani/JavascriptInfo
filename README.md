@@ -24,3 +24,9 @@
 
 - [Catch links in the element](https://noamgolani.github.io/JavascriptInfo/2/4/task2.html)
 - [Image gallery](https://noamgolani.github.io/JavascriptInfo/2/4/task3.html)
+
+### UI Events
+
+#### [Mouse events](https://javascript.info/mouse-events-basics)
+
+- [Selactable list](https://noamgolani.github.io/JavascriptInfo/3/1/task1.html)
