@@ -1,6 +1,8 @@
 # JavascriptInfo
 
-## solutions for [Javascript Info](https://javascript.info/)
+### solutions for [Javascript Info](https://javascript.info/)
+
+**Click on the task to view my solution live**, click on the title and go the the info page. All the code is organized by folders and subfolders, every task has diferent `html` file.
 
 ### Intoduction to Events
 
