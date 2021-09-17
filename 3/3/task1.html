@@ -14,8 +14,12 @@
 
    <script>
       thumb.onmousedown = (event) => {
-         const moveListenter = () => {
+         const moveListenter = (event) => {
             console.log('chec')
+            let left = event.pageX - slider.getBoundingClientRect().x;
+            if (left <= 0) left = 0;
+            if (left >= slider.getBoundingClientRect().width - thumb.getBoundingClientRect().width) left = slider.getBoundingClientRect().width - thumb.getBoundingClientRect().width;
+            thumb.style.left = left + 'px';
          };
 
          document.addEventListener('mousemove', moveListenter);
