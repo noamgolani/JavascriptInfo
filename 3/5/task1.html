@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   Try
+   <pre>A + b</pre><br>
+   And
+   <pre>c + D</pre>
+
+   <script>
+      function runOnKeys(func, ...keys) {
+         let checks = {};
+         document.addEventListener('keydown', (event) => {
+            if (keys.indexOf(event.key) !== -1) checks[event.key] = true;
+            for (const key of keys) {
+               if (!checks[key]) return;
+            }
+
+            checks = {};
+
+            func();
+         });
+         document.addEventListener('keyup', (event) => {
+            checks[event.key] = false;
+            console.log(checks)
+         });
+      }
+      runOnKeys(() => { alert('yay') }, "a", 'b');
+      runOnKeys(() => { alert('nay') }, "c", 'd');
+   </script>
+</body>
+
+</html>
