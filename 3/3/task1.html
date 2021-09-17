@@ -2,12 +2,11 @@
 <html>
 
 <head>
-   <meta charset="utf-8">
-   <link rel="stylesheet" href="style.css">
+   <meta charset="utf-8" />
+   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
    <div id="slider" class="slider">
       <div class="thumb" id="thumb"></div>
    </div>
@@ -15,25 +14,24 @@
    <script>
       thumb.onmousedown = (event) => {
          const moveListenter = (event) => {
-            console.log('chec')
+            console.log("chec");
             let left = event.pageX - slider.getBoundingClientRect().x;
             if (left <= 0) left = 0;
-            if (left >= slider.getBoundingClientRect().width - thumb.getBoundingClientRect().width) left = slider.getBoundingClientRect().width - thumb.getBoundingClientRect().width;
-            thumb.style.left = left + 'px';
+            if (left >= slider.getBoundingClientRect().width - thumb.getBoundingClientRect().width)
+               left = slider.getBoundingClientRect().width - thumb.getBoundingClientRect().width;
+            thumb.style.left = left + "px";
          };
 
-         document.addEventListener('mousemove', moveListenter);
+         document.addEventListener("mousemove", moveListenter);
 
          const mouseUp = () => {
-            document.removeEventListener('mousemove', moveListenter);
-            document.removeEventListener('mouseup', mouseUp);
-            console.log('her')
+            document.removeEventListener("mousemove", moveListenter);
+            document.removeEventListener("mouseup", mouseUp);
+            console.log("her");
          };
-         document.addEventListener('mouseup', mouseUp);
-
-      }
+         document.addEventListener("mouseup", mouseUp);
+      };
    </script>
-
 </body>
 
 </html>
